@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">jitu_jisu</string>
+    <string name="textview">TextView</string>
+    <string name="wake_up_time">TextView</string>
+    <string name="situation_button">誰と会う？</string>
+    <string name="sleep_button">寝る</string>
+    <string name="go_button">何時に家出る？</string>
+    <string name="situation_text" />
+    <string name="go_out_button">家を出る時間</string>
+    <string name="situation_or_people_button">会う人or用事</string>
+    <string name="sleep_d_button">おやすみなさい</string>
+    <string name="situation_name">準備や状況</string>
+    <string name="prepare_time">準備時間</string>
+</resources>
