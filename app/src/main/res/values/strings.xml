@@ -11,4 +11,5 @@
     <string name="sleep_d_button">おやすみなさい</string>
     <string name="situation_name">準備や状況</string>
     <string name="prepare_time">準備時間</string>
+    <string name="button">戻る</string>
 </resources>

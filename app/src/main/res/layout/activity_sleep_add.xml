@@ -7,17 +7,17 @@
     tools:context=".SleepAddActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/situation_name"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="39dp"
         android:ems="10"
         android:hint="名前や状況　例）バイト、彼氏"
         android:inputType="textPersonName"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView3"
@@ -31,10 +31,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/pre_time"
         android:layout_width="228dp"
         android:layout_height="58dp"
-        android:layout_marginBottom="177dp"
+        android:layout_marginBottom="178dp"
         android:ems="10"
         android:hint="準備時間（例）45"
         android:inputType="time"
@@ -49,7 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="31dp"
+        android:onClick="onclick"
         android:text="追加"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -60,8 +61,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="30dp"
-        android:text="削除"
+        android:layout_marginBottom="31dp"
+        android:onClick="onBackButtonTapped"
+        android:text="戻る"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
