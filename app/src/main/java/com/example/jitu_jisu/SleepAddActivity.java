@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -45,7 +46,7 @@ public class SleepAddActivity extends AppCompatActivity {
             else {
                 //値がnullの場合（未入力の場合）
                 Context context = getApplicationContext();
-                CharSequence text = "値いれろバーカ";
+                CharSequence text = "値いれてください";
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(context, text, duration);
@@ -55,12 +56,12 @@ public class SleepAddActivity extends AppCompatActivity {
 
     public void saveData(SQLiteDatabase db,String name,int time){
         ContentValues values = new ContentValues();
-
+        Intent intent =new Intent(this,SituationActivity.class);
         values.put("name",name);
         values.put("time",time);
         db.insert(mTableName,null,values);
         db.close();
-        finish();
+        startActivity(intent);
 
     }
     public void onBackButtonTapped(View view) {

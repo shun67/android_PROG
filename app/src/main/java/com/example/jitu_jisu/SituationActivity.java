@@ -63,6 +63,7 @@ public class SituationActivity extends AppCompatActivity {
 // intentへ添え字付で値を保持させる
                 intent.putExtra( "name_s", s1);
                 intent.putExtra("time",s2);
+                intent.putExtra("ave","25");
 
 // 返却したい結果ステータスをセットする
                 setResult( Activity.RESULT_OK, intent );

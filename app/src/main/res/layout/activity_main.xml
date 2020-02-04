@@ -8,46 +8,71 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="353dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="27dp"
+        android:clickable="true"
+        android:focusable="true"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/situation_button"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="situationClick"
-            android:text="@string/situation_or_people_button" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/situation_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/set_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="297dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/ave_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/situation_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="名前:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/set_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="準備時間:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/ave_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="平均:"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="73dp"
+                    android:layout_height="75dp"
+                    android:onClick="situationClick"
+                    android:text="選択" />
+            </LinearLayout>
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/go_time"
@@ -57,9 +82,16 @@
             android:text="@string/go_out_button" />
 
         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="家を出る時間"
+            android:textSize="30sp" />
+
+        <TextView
             android:id="@+id/go_time_t"
-            android:layout_width="369dp"
-            android:layout_height="52dp"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
             android:textColor="#E91E63"
             android:textSize="30sp" />
 
@@ -67,13 +99,13 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="21dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,8 +118,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="calwaketime_time"
-            android:text="Button"
-            android:textColor="#E91E63"
+            android:text="分"
+            android:textColor="#F82D1F"
             android:textSize="18sp" />
 
         <Button
@@ -95,17 +127,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:onClick="calwaketime_ave"
+            android:text="分"
+            android:textColor="#E91E63"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_width="360dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="105dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -132,13 +168,6 @@
                 android:textColorLink="#FFEB3B"
                 android:textSize="30sp" />
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="78dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="変更" />
-
         </LinearLayout>
 
         <Button
@@ -147,7 +176,9 @@
             android:layout_height="82dp"
             android:onClick="sleep_click"
             android:text="@string/sleep_d_button"
-            android:textSize="30sp" />
+            android:textColor="#3F51B5"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
