@@ -26,6 +26,7 @@ public class Measurement_prepare extends AppCompatActivity {
 
         intent = new Intent(this,Main_masurement.class);
         startActivity(intent);
+        finish();
     }
     public void end_app(View view){
         android.os.Process.killProcess(android.os.Process.myPid());

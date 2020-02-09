@@ -42,6 +42,7 @@ public class SleepAddActivity extends AppCompatActivity {
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
                 saveData(db, name_text, Integer.valueOf(time_text));
+                finish();
             }
             else {
                 //値がnullの場合（未入力の場合）

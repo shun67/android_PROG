@@ -90,6 +90,7 @@ public class SituationActivity extends AppCompatActivity {
         Intent intent;
         intent = new Intent(this,SleepAddActivity.class);
         startActivity(intent);
+        finish();
 
     }
 

@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             TextView text_ave = (TextView) findViewById(R.id.ave_time) ;
             text_name.setText("名前　　:" + situ_n);
             text_time.setText("準備時間:" + time + "分");
-            text_ave.setText("準備時間:" + ave_time + "分");
+            text_ave.setText("平均:" + ave_time + "分");
             TextView textView = (TextView) findViewById(R.id.button5);
             textView.setText(time + "分");
             TextView textView_a = (TextView) findViewById(R.id.button4);
